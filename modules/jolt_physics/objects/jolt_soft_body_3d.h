@@ -70,6 +70,8 @@ class JoltSoftBody3D final : public JoltObject3D {
 	virtual void _add_to_space() override;
 
 	JPH::SoftBodySharedSettings *_create_shared_settings();
+	JPH::SoftBodySharedSettings *_create_shared_settings_cloth();
+	JPH::SoftBodySharedSettings *_create_shared_settings_volume();
 
 	void _update_mass();
 	void _update_pressure();
